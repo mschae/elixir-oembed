@@ -4,7 +4,7 @@ defmodule OEmbed.Mixfile do
   def project do
     [ app: :oembed,
       version: "0.1.0",
-      elixir: "> 1.0.0",
+      elixir: ">= 1.0.0",
       deps: deps ]
   end
 
