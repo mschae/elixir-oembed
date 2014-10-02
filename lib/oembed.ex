@@ -33,5 +33,5 @@ defmodule OEmbed do
   end
 
   defp oembed_from(nil), do: nil
-  defp oembed_from(url), do: url |> HTTPoison.get |> HTTPoison.Response.body
+  defp oembed_from(url), do: url |> HTTPoison.get |> Map.from_struct |> Dict.fetch(:body)
 end
