@@ -4,7 +4,7 @@ defmodule OEmbed.Mixfile do
   def project do
     [ app: :oembed,
       version: "0.1.0",
-      elixir: "~> 0.13.0-dev",
+      elixir: "> 1.0.0",
       deps: deps ]
   end
 
@@ -20,7 +20,7 @@ defmodule OEmbed.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      { :httpoison, "~> 0.0.2", github: "knewter/httpoison", branch: "0.13_application_start_fix" }
+      { :httpoison, "~> 0.4.2" }
     ]
   end
 end
